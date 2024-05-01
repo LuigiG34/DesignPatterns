@@ -1,22 +1,20 @@
-# Design Patterns in PHP
+# Design Patterns en PHP
 
-There are 3 different types of design patterns and within those categories we hace multiple types of design patterns in PHP, this project is just an example of how to implement these patterns in PHP. These patterns are not exclusive to PHP.
+Il existe trois types différents de modèles de conception et, dans ces catégories, nous avons plusieurs types de modèles de conception en PHP. Ce projet est juste un exemple de la manière d'implémenter ces modèles en PHP. Ces modèles ne sont pas exclusifs au PHP.
 
 ---
-### Creational Patterns
-These patterns indicate different ways to create objects/classes.
+### Patterns de Création
+Ces patterns indiquent différentes façons de créer des objets/classes.
 
-Types of creational patterns :
-- Abstract Factory
-- Builder
-- Factory Method
-- Prototype
-- Singleton
+- Abstract Factory : ```Produit des familles d'objets liés sans définir explicitement les types spécifiques des objets.```
+- Builder : ```Construit des objets complexes étape par étape.```
+- Factory Method : ```Fournit une interface pour créer des objets dans une superclasse, mais permet aux sous-classes de modifier le type d'objets qui seront créés.```
+- Prototype : ```Duplique des objets existants sans que le code ne dépende de leurs classes..```
+- Singleton : ```Assurez-vous que la classe n'a qu'une seule instance, tout en fournissant un point d'accès global à cette instance.```
 ---
-### Structural Patterns
-These patterns indicate different ways objects/classes relate to each other.
+### Patterns de Structure
+Ces patterns indiquent les différentes manières dont les objets/classes se rapportent les uns aux autres.
 
-Types of structural patterns :
 - Adapter
 - Bridge
 - Composite
@@ -25,10 +23,9 @@ Types of structural patterns :
 - Flyweight
 - Proxy
 ---
-### Behavioral Patterns
-These patterns indicate how objects/classes communicate and interact with each other.
+### Patterns de Comportement
+Ces patterns montrent comment les objets/classes communiquent et interagissent entre eux.
 
-Types of behavioral patterns :
 - Chain of Responsibility
 - Command
 - Iterator
@@ -42,4 +39,4 @@ Types of behavioral patterns :
 
 
 
-This repository was made with the help of : https://refactoring.guru/design-patterns/php
+Source : https://refactoring.guru/design-patterns/php

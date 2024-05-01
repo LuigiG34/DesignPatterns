@@ -1,13 +1,13 @@
 # Abstract Factory
 
-The **Abstract Factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+L'**Abstract Factory** est un modèle de conception de création qui vous permet de produire des familles d'objets liés sans spécifier leurs classes concrètes.
 
 ---
-### Pros & Cons
+### Avantages et Inconvénients
 
-- You can be sure that the classes you're getting from a factory are compatible with each other. ✅
-- You avoid tight coupling between concrete classes and code. ✅
-- (SRP) You can extract the classe creation code into one place, making the code easier to support. ✅
-- (OCP) You can introduce new variants of classes without breaking existing code. ✅
+- Vous pouvez être sûr que les classes que vous obtenez d'une fabrique sont compatibles entre elles. ✅
+- Vous évitez un couplage serré entre les classes concrètes et le code. ✅
+- (SRP) Vous pouvez extraire le code de création de classe en un seul endroit, rendant le code plus facile à supporter. ✅
+- (OCP) Vous pouvez introduire de nouvelles variantes de classes sans casser le code existant. ✅
 
-- The code may become more complicated, since a lot of new classes and interfaces are being introduced along with the pattern.❌
+- Le code peut devenir plus compliqué, car de nombreuses nouvelles classes et interfaces sont introduites avec le modèle. ❌

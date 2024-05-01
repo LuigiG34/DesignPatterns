@@ -1,13 +1,13 @@
 # Prototype
 
-The **Prototype** is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+Le **Prototype** est un modèle de conception de création qui vous permet de copier des objets existants sans rendre votre code dépendant de leurs classes.
 
 ---
-### Pros & Cons
+### Avantages et Inconvénients
 
-- You can clone objects without coupling to their concrete classes. ✅
-- You can get rid of repeated initialization code in favor of cloning pre-built prototypes. ✅
-- You can produce complex objects more conveniently. ✅
+- Vous pouvez cloner des objets sans être lié à leurs classes concrètes. ✅
+- Vous pouvez vous débarrasser du code d'initialisation répété en faveur du clonage de prototypes pré-construits. ✅
+- Vous pouvez produire des objets complexes plus facilement. ✅
+- Vous obtenez une alternative à l'héritage lors de la gestion des préréglages de configuration pour des objets complexes. ✅
 
-- You get an alternative to inheritance when dealing with configuration presets for complex objects. ✅
-- Cloning complex objects that have circular references might be very tricky. ❌
+- Cloner des objets complexes qui ont des références circulaires peut être très délicat. ❌

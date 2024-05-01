@@ -1,15 +1,15 @@
-# Singleton 
+# Singleton
 
-The **Singleton** is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+Le **Singleton** est un modèle de conception de création qui vous permet de garantir qu'une classe a une seule instance, tout en fournissant un point d'accès global à cette instance.
 
 ---
-### Pros & Cons
+### Avantages et Inconvénients
 
-- You can be sure that a class has only a single instance. ✅
-- You gain a global access point to that instance. ✅
-- The singleton object is initialized only when it’s requested for the first time. ✅
+- Vous pouvez être sûr qu'une classe n'a qu'une seule instance. ✅
+- Vous gagnez un point d'accès global à cette instance. ✅
+- L'objet singleton est initialisé uniquement lorsqu'il est demandé pour la première fois. ✅
 
-- Violates the Single Responsibility Principle. The pattern solves two problems at the time. ❌
-- The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. ❌
-- The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times. ❌
-- It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern. ❌
+- Viole le Principe de Responsabilité Unique. Le modèle résout deux problèmes à la fois. ❌
+- Le modèle Singleton peut masquer une mauvaise conception, par exemple, lorsque les composants du programme en savent trop les uns sur les autres. ❌
+- Le modèle nécessite un traitement spécial dans un environnement multithread afin que plusieurs fils d'exécution ne créent pas plusieurs fois un objet singleton. ❌
+- Il peut être difficile de tester unitairement le code client du Singleton car de nombreux cadres de test reposent sur l'héritage pour produire des objets simulés. Étant donné que le constructeur de la classe singleton est privé et qu'il est impossible de remplacer les méthodes statiques dans la plupart des langues, vous devrez trouver une manière créative de simuler le singleton. Ou simplement ne pas écrire les tests. Ou ne pas utiliser le modèle Singleton. ❌

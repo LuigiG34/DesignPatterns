@@ -1,12 +1,12 @@
 # Builder
 
-The **Builder** is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+Le **Builder** est un modèle de conception de création qui vous permet de construire des objets complexes étape par étape. Le modèle vous permet de produire différents types et représentations d'un objet en utilisant le même code de construction.
 
 ---
-### Pros & Cons
+### Avantages et Inconvénients
 
-- You can construct objects step-by-step, defer construction steps or run steps recursively. ✅
-- You can reuse the same construction code when building various representations of products. ✅
-- Single Responsibility Principle. You can isolate complex construction code from the business logic of the product. ✅
+- Vous pouvez construire des objets étape par étape, différer les étapes de construction ou exécuter des étapes de manière récursive. ✅
+- Vous pouvez réutiliser le même code de construction lors de la construction de différentes représentations de produits. ✅
+- Principe de Responsabilité Unique. Vous pouvez isoler le code de construction complexe de la logique commerciale du produit. ✅
 
-- The overall complexity of the code increases since the pattern requires creating multiple new classes. ❌
+- La complexité globale du code augmente car le modèle nécessite la création de plusieurs nouvelles classes. ❌

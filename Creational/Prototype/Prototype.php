@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Creational\Prototype\Prototype;
+namespace LuigiG34\Creational\Prototype;
 
 class Page
 {
@@ -42,3 +42,35 @@ class Page
         $this->date = new \DateTime();
     }
 }
+
+class Author
+{
+    private $name;
+
+    /**
+     * @var Page[]
+     */
+    private $pages = [];
+
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
+
+    public function addToPage(Page $page): void
+    {
+        $this->pages[] = $page;
+    }
+}
+
+/**
+ * @example Example d'utilisation du Pattern Prototype
+ */
+$author = new Author("John Smith");
+$page = new Page("Tip of the day", "Keep calm and carry on.", $author);
+
+$page->addComment("Nice tip, thanks!");
+
+$draft = clone $page;
+echo "Dump of the clone. Note that the author is now referencing two objects.\n\n";
+print_r($draft);

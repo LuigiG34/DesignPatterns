@@ -1,8 +1,17 @@
 <?php
 
-namespace App\Creational\Builder\Builder;
+namespace LuigiG34\Creational\Builder;
 
-use App\Creational\Builder\Interface\SQLQueryBuilder;
+interface SQLQueryBuilder
+{
+    public function select(string $table, array $fields): SQLQueryBuilder;
+
+    public function where(string $field, string $value, string $operator = '='): SQLQueryBuilder;
+
+    public function limit(int $start, int $offset): SQLQueryBuilder;
+
+    public function getSQL(): string;
+}
 
 class MysqlQueryBuilder implements SQLQueryBuilder
 {
@@ -56,3 +65,21 @@ class MysqlQueryBuilder implements SQLQueryBuilder
         return $sql;
     }
 }
+
+/**
+ * @example Example d'utilisation du Pattern Builder
+ */
+function createQueryWithBuilder(SQLQueryBuilder $queryBuilder)
+{
+    $query = $queryBuilder
+        ->select("users", ["name", "email", "password"])
+        ->where("age", 18, ">")
+        ->where("age", 30, "<")
+        ->limit(10, 20)
+        ->getSQL();
+
+    echo $query;
+}
+
+echo "Test MySQL builder:\n";
+createQueryWithBuilder(new MysqlQueryBuilder());

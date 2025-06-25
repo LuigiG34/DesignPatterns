@@ -157,7 +157,7 @@ function loadProductData(FormElement $form)
 }
 
 /**
- * @example Example d'utilisation du Pattern Composite
+ * @example Exemple d'utilisation du Pattern Composite
  */
 $form = getProductForm();
 loadProductData($form);

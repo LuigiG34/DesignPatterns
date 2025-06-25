@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Structural\Bridge;
+namespace LuigiG34\Structural;
 
 interface Renderer
 {
@@ -139,7 +139,7 @@ class JsonRenderer implements Renderer
 }
 
 /**
- * @example Example d'utilisation du Pattern Bridge
+ * @example Exemple d'utilisation du Pattern Bridge
  */
 $HTMLRenderer = new HTMLRenderer();
 $JSONRenderer = new JsonRenderer();

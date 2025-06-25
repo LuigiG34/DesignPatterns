@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Structural\Flyweight;
+namespace LuigiG34\Structural;
 
 class CatVariation
 {
@@ -147,7 +147,7 @@ class CatDataBase
 }
 
 /**
- * @example Example d'utilisation du Pattern Flyweight
+ * @example Exemple d'utilisation du Pattern Flyweight
  */
 $db = new CatDataBase();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Structural\Decorator;
+namespace LuigiG34\Structural;
 
 interface InputFormat
 {
@@ -101,7 +101,7 @@ class MarkdownFormat extends TextFormat
 }
 
 /**
- * @example Example d'utilisation du Pattern Decorator
+ * @example Exemple d'utilisation du Pattern Decorator
  */
 $dangerousComment = <<<HERE
 Hello! Nice blog post!

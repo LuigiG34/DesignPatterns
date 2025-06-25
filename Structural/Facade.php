@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Structural\Facade;
+namespace LuigiG34\Structural;
 
 class YouTubeDownloader
 {
@@ -40,7 +40,6 @@ class YouTubeDownloader
     }
 }
 
-
 class YouTube
 {
     public function fetchVideo(): string {}
@@ -69,7 +68,7 @@ class FFMpegVideo
 }
 
 /**
- * @example Example d'utilisation du Pattern Facade
+ * @example Exemple d'utilisation du Pattern Facade
  */
 $facade = new YouTubeDownloader("APIKEY-XXXXXXXXX");
 $facade->downloadVideo("https://www.youtube.com/watch?v=QH2-TGUlwu4");

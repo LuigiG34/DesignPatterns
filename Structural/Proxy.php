@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Structural\Proxy;
+namespace LuigiG34\Structural;
 
 interface Downloader
 {
@@ -50,7 +50,7 @@ class CachingDownloader implements Downloader
 }
 
 /**
- * @example Example d'utilisation du Pattern Proxy
+ * @example Exemple d'utilisation du Pattern Proxy
  */
 echo "Executing the same client code with a proxy:\n";
 $proxy = new CachingDownloader($realSubject);

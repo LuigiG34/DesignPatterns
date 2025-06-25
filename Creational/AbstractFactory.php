@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Creational\AbstractFactory;
+namespace LuigiG34\Creational;
 
 interface PageTemplate
 {
@@ -119,7 +119,7 @@ class PHPTemplateFactory implements TemplateFactory
 }
 
 /**
- * @example Example d'utilisation du Pattern AbstractFactory
+ * @example Exemple d'utilisation du Pattern AbstractFactory
  */
 $page = new Page('Sample page', 'This is the body.');
 

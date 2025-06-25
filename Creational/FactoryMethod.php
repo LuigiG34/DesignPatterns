@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Creational\FactoryMethod;
+namespace LuigiG34\Creational;
 
 interface SocialNetworkConnector
 {
@@ -70,7 +70,7 @@ class FacebookPoster extends SocialNetworkPoster
 
 
 /**
- * @example Example d'utilisation du Pattern FactoryMethod
+ * @example Exemple d'utilisation du Pattern FactoryMethod
  */
 function clientCode(SocialNetworkPoster $creator)
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Creational\Prototype;
+namespace LuigiG34\Creational;
 
 class Page
 {
@@ -64,7 +64,7 @@ class Author
 }
 
 /**
- * @example Example d'utilisation du Pattern Prototype
+ * @example Exemple d'utilisation du Pattern Prototype
  */
 $author = new Author("John Smith");
 $page = new Page("Tip of the day", "Keep calm and carry on.", $author);

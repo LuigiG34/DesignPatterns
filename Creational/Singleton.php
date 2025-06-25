@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Creational\Singleton;
+namespace LuigiG34\Creational;
 
 class Singleton
 {
@@ -64,7 +64,7 @@ class Config extends Singleton
 }
 
 /**
- * @example Example d'utilisation du Pattern Singleton
+ * @example Exemple d'utilisation du Pattern Singleton
  */
 Logger::log("Started!");
 

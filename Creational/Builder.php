@@ -1,6 +1,6 @@
 <?php
 
-namespace LuigiG34\Creational\Builder;
+namespace LuigiG34\Creational;
 
 interface SQLQueryBuilder
 {
@@ -67,7 +67,7 @@ class MysqlQueryBuilder implements SQLQueryBuilder
 }
 
 /**
- * @example Example d'utilisation du Pattern Builder
+ * @example Exemple d'utilisation du Pattern Builder
  */
 function createQueryWithBuilder(SQLQueryBuilder $queryBuilder)
 {

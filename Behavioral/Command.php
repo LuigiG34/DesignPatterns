@@ -2,9 +2,6 @@
 
 namespace LuigiG34\Behavioral;
 
-/**
- * @example Exemple d'utilisation du Pattern Command
- */
 
 /**
  * Interface Command
@@ -163,7 +160,7 @@ class PrintQueue
 }
 
 /**
- * Code client : Ajout de commandes à la file et traitement.
+ * @example Exemple d'utilisation du Pattern Command
  */
 $queue = PrintQueue::get();
 
